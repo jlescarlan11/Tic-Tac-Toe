@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js" defer></script>
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div id="game-container">
+      <h1>Tic-Tac-Toe</h1>
+      <div id="player-inputs">
+        <input type="text" id="player1" placeholder="Player 1 Name" />
+        <input type="text" id="player2" placeholder="Player 2 Name" />
+        <button id="start-button">Start Game</button>
+      </div>
+      <div id="game-board" class="hidden">
+        <div class="row">
+          <div class="cell" data-index="0"></div>
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+        </div>
+        <div class="row">
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+        </div>
+        <div class="row">
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+        </div>
+      </div>
+      <button id="restart-button" class="hidden">Restart Game</button>
+      <div id="result" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
